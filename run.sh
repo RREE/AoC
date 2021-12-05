@@ -13,4 +13,8 @@ if (( $((10#$DAY)) > 25 )) ; then
     exit
 fi
 
+echo -n "part 1: "
 ./obj/aoc_${DAY}a ${DAY}/input.txt
+
+echo -n "part 2: "
+./obj/aoc_${DAY}b ${DAY}/input.txt

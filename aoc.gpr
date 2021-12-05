@@ -3,6 +3,9 @@ project AOC is
    for Source_Dirs use ("**"); --  all subdirs
    for Excluded_Source_Dirs use (".git", "obj");
    for Object_Dir use "obj";
-   for Main use ("aoc_01a.adb" -- , "aoc_01b.adb"
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnatX");
+   end Compiler;
+   for Main use ("aoc_01a.adb", "aoc_01b.adb"
                 );
 end AOC;
