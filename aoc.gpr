@@ -1,15 +1,8 @@
 project AOC is  
    for Create_Missing_Dirs use "True";
-   for Source_Dirs use (".");
+   for Source_Dirs use ("**"); --  all subdirs
+   for Excluded_Source_Dirs use (".git", "obj");
    for Object_Dir use "obj";
    for Main use ("aoc_01a.adb" -- , "aoc_01b.adb"
-                 -- "aoc_2020_02.adb", "aoc_2020_02_2.adb",
-                 -- "aoc_2020_03.adb", "aoc_2020_03_2.adb",
-                 -- "aoc_2020_04.adb", "aoc_2020_04_2.adb",
-                 -- "aoc_2020_05.adb", "aoc_2020_05_2.adb",
-                 -- "aoc_2020_06.adb", "aoc_2020_06_2.adb",
-                 -- "aoc_2020_08.adb", "aoc_2020_08_2.adb",
-                 -- "aoc_2020_09.adb", "aoc_2020_09_2.adb",
-                 -- "aoc_2020_10.adb", "aoc_2020_10_2.adb"
                 );
 end AOC;
