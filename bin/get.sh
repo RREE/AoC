@@ -20,5 +20,5 @@ URL="https://adventofcode.com/${YEAR}/day/${DAY}/input"
 
 if [ ! -f ${DAYS}/input.txt ] ; then
     mkdir -p ${DAYS}
-    curl -v $URL --cookie "session=${SESSION}" -o ${DAYS}/input.txt
+    curl $URL --cookie "session=${SESSION}" -o ${DAYS}/input.txt
 fi
