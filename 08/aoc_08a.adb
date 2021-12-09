@@ -35,13 +35,6 @@ is
       Pointer := I;
    end Get_Next_Word;
 
-   procedure Get_Count_Of_Unique_Numbers
-   is
-      Sum : Natural := 0;
-   begin
-      Sum := Count'Reduce ("+", 0);
-      Put_Line ("unique numbers" & Sum'Image);
-   end Get_Count_Of_Unique_Numbers;
 
 begin
    Open_Input;
@@ -58,7 +51,6 @@ begin
          while Line(P) /= '|' loop P := P + 1; end loop; P := P + 1;
          loop
             Get_Next_Word (Line (P..Last), Len, P);
-            -- Put_Line ("'" & Line(P..Last) & "', p" & P'Image & ", len" & Len'Image);
             case Len is
             when 1 => null; -- found the |
             when 2 => Count(1) := @ + 1;
@@ -67,15 +59,14 @@ begin
             when 7 => Count (8) := @ + 1;
             when others => null;
             end case;
-           --  Put_Line ("count: 1:" & Count(1)'Image & ", 4:" & Count(4)'Image & ", 7:" & Count(7)'Image & ", 8:" & Count(8)'Image & ", sum:" & Integer'(Count'Reduce ("+", 0))'Image);
             exit when P >= Last;
          end loop;
       exception
       when End_Error => null;
       end Read_Patterns;
-
-      Get_Count_Of_Unique_Numbers;
    end loop;
+
+   Put_Line ("unique numbers" & Integer'(Count'Reduce ("+", 0))'Image);
 
 
 end Aoc_08a;
