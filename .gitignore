@@ -6,3 +6,5 @@ obj
 
 # Ada Library Information
 *.ali
+*.stderr
+*.stdout

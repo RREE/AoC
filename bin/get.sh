@@ -2,7 +2,6 @@
 
 YEAR=`date +%Y`
 DAY=$1
-if (( ${#DAY} == 1 )) ; then DAYS="0${DAY}" ; fi
 DAY=${DAY:-`date +%d`}
 if (( $((10#$DAY)) < 1 )) ; then
     echo "wrong day number"
@@ -11,6 +10,11 @@ fi
 if (( $((10#$DAY)) > 25 )) ; then
     echo "wrong day number"
     exit
+fi
+if (( ${#DAY} == 1 )) ; then
+    DAYS="0${DAY}"
+else
+    DAYS=${DAY}
 fi
 
 
