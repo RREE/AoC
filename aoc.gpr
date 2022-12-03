@@ -1,11 +1,20 @@
 project AOC is  
    for Create_Missing_Dirs use "True";
-   for Source_Dirs use ("2022/**"); --  all subdirs
+   for Source_Dirs use (".", "2022/**"); --  all subdirs
    for Excluded_Source_Dirs use (".git", "obj");
    for Object_Dir use "obj";
    package Compiler is
       for Default_Switches ("Ada") use ("-gnatX");
    end Compiler;
-   for Main use ("aoc_01a.adb", "aoc_01b.adb"
+   for Main use ("aoc_01_a.adb", "aoc_01_b.adb",
+                 "aoc_02_a.adb", "aoc_02_b.adb",
+                 "aoc_03_a.adb",
+                 "aoc_04_a.adb",
+                 "aoc_05_a.adb",
+                 "aoc_06_a.adb",
+                 "aoc_07_a.adb",
+                 "aoc_08_a.adb",
+                 "aoc_09_a.adb",
+                 "aoc_10_a.adb"
                 );
 end AOC;

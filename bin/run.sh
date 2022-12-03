@@ -14,7 +14,7 @@ if (( $((10#$DAY)) > 25 )) ; then
 fi
 
 echo -n "part 1: "
-./obj/aoc_${DAY}a ${DAY}/input.txt
+./obj/aoc_${DAY}_a 2022/${DAY}/input.txt
 
 echo -n "part 2: "
-./obj/aoc_${DAY}b ${DAY}/input.txt
+./obj/aoc_${DAY}_b 2022/${DAY}/input.txt

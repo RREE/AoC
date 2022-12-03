@@ -8,3 +8,8 @@ obj
 *.ali
 *.stderr
 *.stdout
+
+# Alire infrastructure
+alire.toml
+config/
+alire/
