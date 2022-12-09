@@ -13,8 +13,8 @@ project AOC is
                  "aoc_05_a.adb", "aoc_05_b.adb",
                  "aoc_06_a.adb", "aoc_06_b.adb",
                  "aoc_07_a.adb",
-                 "aoc_08_a.adb",
-                 "aoc_09_a.adb",
+                 "aoc_08_a.adb", "aoc_08_b.adb",
+                 "aoc_09_a.adb", "aoc_09_b.adb",
                  "aoc_10_a.adb"
                 );
 end AOC;
