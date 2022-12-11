@@ -15,6 +15,16 @@ project AOC is
                  "aoc_07_a.adb",
                  "aoc_08_a.adb", "aoc_08_b.adb",
                  "aoc_09_a.adb", "aoc_09_b.adb",
-                 "aoc_10_a.adb"
+                 "aoc_10_a.adb", "aoc_10_b.adb",
+                 "aoc_11_a.adb", "aoc_11_b.adb",
+                 "aoc_12_a.adb",
+                 "aoc_13_a.adb",
+                 "aoc_14_a.adb",
+                 "aoc_15_a.adb",
+                 "aoc_16_a.adb",
+                 "aoc_17_a.adb",
+                 "aoc_18_a.adb",
+                 "aoc_19_a.adb",
+                 "aoc_20_a.adb"
                 );
 end AOC;
