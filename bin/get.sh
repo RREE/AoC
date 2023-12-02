@@ -18,11 +18,11 @@ else
 fi
 
 
-SESSION="53616c7465645f5fd891783967c6b6923ab57aaff96d91ba4bbef18bddb0e3281e35315ce9966aafcd44a0a3e6f6a9c136f0fda8093dcae8af6050a221d44528"
+SESSION="53616c7465645f5fc5bac67576de7caa41c0c6daf503ce7ea2d9b4d9f049559b40c10a3161dbfdf27967c635d094d1167b07cf762ca74bf19f0f161b1f5147a1"
 URL="https://adventofcode.com/${YEAR}/day/${DAY}/input"
 
 
 if [ ! -f ${DAYS}/input.txt ] ; then
     mkdir -p ${DAYS}
-    curl $URL --cookie "session=${SESSION}" -o 2022/${DAYS}/input.txt
+    curl $URL --cookie "session=${SESSION}" -o ${YEAR}/${DAYS}/input.txt
 fi

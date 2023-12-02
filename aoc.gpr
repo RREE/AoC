@@ -1,6 +1,6 @@
 project AOC is  
    for Create_Missing_Dirs use "True";
-   for Source_Dirs use (".", "2022/**"); --  all subdirs
+   for Source_Dirs use (".", "2023/**"); --  all subdirs
    for Excluded_Source_Dirs use (".git", "obj");
    for Object_Dir use "obj";
    
@@ -9,17 +9,17 @@ project AOC is
                                         "-gnatwu");
    end Compiler;
    
-   for Main use ("aoc_01_a.adb", "aoc_01_b.adb",
-                 "aoc_02_a.adb", "aoc_02_b.adb",
-                 "aoc_03_a.adb", "aoc_03_b.adb",
-                 "aoc_04_a.adb", "aoc_04_b.adb",
-                 "aoc_05_a.adb", "aoc_05_b.adb",
-                 "aoc_06_a.adb", "aoc_06_b.adb",
+   for Main use ("aoc_01_a.adb", --  "aoc_01_b.adb",
+                 "aoc_02_a.adb", --  "aoc_02_b.adb",
+                 "aoc_03_a.adb", --  "aoc_03_b.adb",
+                 "aoc_04_a.adb", --  "aoc_04_b.adb",
+                 "aoc_05_a.adb", --  "aoc_05_b.adb",
+                 "aoc_06_a.adb", --  "aoc_06_b.adb",
                  "aoc_07_a.adb",
                  "aoc_08_a.adb",
-                 "aoc_09_a.adb", "aoc_09_b.adb",
-                 "aoc_10_a.adb", "aoc_10_b.adb",
-                 "aoc_11_a.adb", "aoc_11_b.adb",
+                 "aoc_09_a.adb", --  "aoc_09_b.adb",
+                 "aoc_10_a.adb", --  "aoc_10_b.adb",
+                 "aoc_11_a.adb", --  "aoc_11_b.adb",
                  "aoc_12_a.adb",
                  "aoc_13_a.adb",
                  "aoc_14_a.adb",
@@ -29,7 +29,7 @@ project AOC is
                  "aoc_18_a.adb",
                  "aoc_19_a.adb",
                  "aoc_20_a.adb",
-                 "aoc_21_a.adb", "aoc_21_b.adb",
+                 "aoc_21_a.adb", --  "aoc_21_b.adb",
                  "aoc_22_a.adb",
                  "aoc_23_a.adb",
                  "aoc_24_a.adb"
