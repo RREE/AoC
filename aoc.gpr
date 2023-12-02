@@ -9,7 +9,7 @@ project AOC is
                                         "-gnatwu");
    end Compiler;
    
-   for Main use ("aoc_01_a.adb", --  "aoc_01_b.adb",
+   for Main use ("aoc_01_a.adb", "aoc_01_b.adb",
                  "aoc_02_a.adb", --  "aoc_02_b.adb",
                  "aoc_03_a.adb", --  "aoc_03_b.adb",
                  "aoc_04_a.adb", --  "aoc_04_b.adb",
