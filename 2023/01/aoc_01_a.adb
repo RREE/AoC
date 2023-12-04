@@ -1,8 +1,5 @@
 with Ada.Text_IO;             use Ada.Text_IO;
-with Ada.Integer_Text_IO;     use Ada.Integer_Text_IO;
 with Aoc_Helper;              use Aoc_Helper;
-with Ada.Strings.Fixed;       use Ada.Strings.Fixed;
-with Ada.Strings.Maps;        use Ada.Strings.Maps;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
 
 procedure AoC_01_A is
@@ -14,7 +11,6 @@ begin
       declare
          Line : String := Get_Line(Input);
          First, Last : Integer := 0;
-         Pos : Natural;
       begin
          for C of Line loop
             if Is_Digit(C) then

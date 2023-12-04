@@ -1,8 +1,5 @@
 with Ada.Text_IO;             use Ada.Text_IO;
-with Ada.Integer_Text_IO;     use Ada.Integer_Text_IO;
 with Aoc_Helper;              use Aoc_Helper;
-with Ada.Strings.Fixed;       use Ada.Strings.Fixed;
-with Ada.Strings.Maps;        use Ada.Strings.Maps;
 with Ada.Characters.Handling; use Ada.Characters.Handling;
 
 procedure AoC_01_B is
@@ -17,7 +14,6 @@ begin
       declare
          Line : String := Get_Line(Input);
          First, Last : Integer := 0;
-         Pos : Natural;
       begin
          Search_First:
          for Pos in Line'Range loop
