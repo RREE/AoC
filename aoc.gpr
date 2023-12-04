@@ -14,7 +14,7 @@ project AOC is
    for Main use ("aoc_01_a.adb", "aoc_01_b.adb",
                  "aoc_02_a.adb", "aoc_02_b.adb",
                  "aoc_03_a.adb", "aoc_03_b.adb",
-                 "aoc_04_a.adb", --  "aoc_04_b.adb",
+                 "aoc_04_a.adb", "aoc_04_b.adb",
                  "aoc_05_a.adb", --  "aoc_05_b.adb",
                  "aoc_06_a.adb", --  "aoc_06_b.adb",
                  "aoc_07_a.adb",
