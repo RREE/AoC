@@ -18,9 +18,10 @@ else
 fi
 
 
-SESSION="53616c7465645f5fc5bac67576de7caa41c0c6daf503ce7ea2d9b4d9f049559b40c10a3161dbfdf27967c635d094d1167b07cf762ca74bf19f0f161b1f5147a1"
-URL="https://adventofcode.com/${YEAR}/day/${DAY}/input"
+SESSION="53616c7465645f5f95a26df40e2c6a34c183d12178eed5d7088c62328ff946200882e846914d0f81381630bf393ae9fc2092a90ac51bcbdc3cedc072b05bb5d2"
 
+URL="https://adventofcode.com/${YEAR}/day/${DAY}/input"
+echo $URL
 
 if [ ! -f ${DAYS}/input.txt ] ; then
     mkdir -p ${DAYS}

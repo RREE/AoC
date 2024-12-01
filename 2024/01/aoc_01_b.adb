@@ -2,9 +2,23 @@ with Ada.Text_IO;             use Ada.Text_IO;
 with Ada.Integer_Text_IO;     use Ada.Integer_Text_IO;
 with Aoc_Helper;              use Aoc_Helper;
 
-procedure AoC_01_A is
+procedure AoC_01_B is
    Team_Left, Team_Right : Int_Vec.Vector;
+   Count_Right : Natural;
    Total : Natural := 0;
+
+   function Count_Appearance (Cmp : Natural; V : Int_Vec.Vector) return Natural
+   is
+      Count : Natural := 0;
+   begin
+      for Val of V loop
+         if Val = Cmp then
+            Count := Count + 1;
+         end if;
+      end loop;
+      return Count;
+   end Count_Appearance;
+
 begin
    Open_Input;
 
@@ -21,13 +35,11 @@ begin
       end;
    end loop;
 
-   Int_Vec_Sorting.Sort (Team_Left);
-   Int_Vec_Sorting.Sort (Team_Right);
-
    for I in Team_Left.First_Index .. Team_Left.Last_Index loop
-      Total := @ + abs (Team_Left(I) - Team_Right(I));
+      Count_Right := Count_Appearance (Team_Left(I), Team_Right);
+      Total := @ + Team_Left(I) * Count_Right;
    end loop;
 
    Put_Line ("Result: " & Total'Image);
 
-end AoC_01_A;
+end AoC_01_B;
